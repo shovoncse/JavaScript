@@ -106,7 +106,7 @@ var firstname = 'abc'; //(Not Recommanded)
         DATATYPES
 =========================*/
 //Dynamic type language
-
+/*
 //PRIMITIVE
 
 //String
@@ -149,3 +149,94 @@ console.log(typeof address);
 const today = new Date();
 console.log(today);
 console.log(typeof today);
+
+*/
+
+/* ==============
+ TYPE CONVERSION 
+ ================*/
+// let val;
+
+// // To String
+// val = 5;
+
+// Output
+// console.log(val);
+// console.log(typeof val);
+// console.log(val.length); // Only Works On String
+
+// Number to String
+// val = String(5);
+// val = String(5555);
+// val = String(5+5);
+// // Bool to String
+// val = String(true);
+// // Date to String
+// val = String(new Date());
+// // Array to String
+// val = String([1,2,3,4]);
+
+// // toString() like c#
+// val = (5).toString();
+// val = (true).toString();
+
+
+// String to numbers
+// val = Number('5');
+
+// // Boolean to Number
+// val = Number(true);
+// val = Number(false);
+
+// //Null to Number
+// val = Number(null);
+
+// val = Number('Hello'); // NaN
+// val = Number([1,2,3,4]); // NaN
+
+// val = parseInt('100.30');
+// val = parseFloat('100.31');
+
+// console.log(val);
+// console.log(typeof val);
+// console.log(val.length); // Only Works On String
+// console.log(val.toFixed()); // Only Works On Number
+
+// const val1 = 5;
+// const val1 = '5';
+// const val2 = 6;
+// const sum = val1 + val2;
+
+// console.log(sum);
+// console.log(typeof sum);
+
+
+const num1 = 100;
+const num2 = 50;
+let val;
+
+//Simple math with numbers
+val = num1 + num2
+val = num1 * num2
+val = num1 - num2
+val = num1 / num2
+val = num1 % num2
+
+// Math object
+val = Math.PI; 
+val = Math.E; 
+val = Math.round(2.4); 
+val = Math.ceil(2.4); 
+val = Math.floor(2.4); 
+val = Math.sqrt(64); 
+val = Math.abs(-2); 
+val = Math.pow(4,2); 
+val = Math.min(4,2,-1,5,7,22,1,-9); 
+val = Math.max(4,2,-1,5,7,22,1,-9); 
+val = Math.random(); 
+val = Math.random() * 20 + 1; // 1-20 Decimal
+
+val = Math.floor(Math.random() * 20 + 1); 
+
+
+console.log(val);
