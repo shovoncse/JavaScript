@@ -211,32 +211,100 @@ console.log(typeof today);
 // console.log(typeof sum);
 
 
-const num1 = 100;
-const num2 = 50;
+// const num1 = 100;
+// const num2 = 50;
+// let val;
+
+// //Simple math with numbers
+// val = num1 + num2
+// val = num1 * num2
+// val = num1 - num2
+// val = num1 / num2
+// val = num1 % num2
+
+// // Math object
+// val = Math.PI; 
+// val = Math.E; 
+// val = Math.round(2.4); 
+// val = Math.ceil(2.4); 
+// val = Math.floor(2.4); 
+// val = Math.sqrt(64); 
+// val = Math.abs(-2); 
+// val = Math.pow(4,2); 
+// val = Math.min(4,2,-1,5,7,22,1,-9); 
+// val = Math.max(4,2,-1,5,7,22,1,-9); 
+// val = Math.random(); 
+// val = Math.random() * 20 + 1; // 1-20 Decimal
+
+// val = Math.floor(Math.random() * 20 + 1); 
+
+
+// console.log(val);
+
+const firstName = 'William';
+const lastName = 'Johnson';
+const age = 36;
+const str = 'Hello there my name is Shovon Das';
+const tags = 'web design,web development, graphics, programming' ;
 let val;
 
-//Simple math with numbers
-val = num1 + num2
-val = num1 * num2
-val = num1 - num2
-val = num1 / num2
-val = num1 % num2
+val = firstName + lastName;
 
-// Math object
-val = Math.PI; 
-val = Math.E; 
-val = Math.round(2.4); 
-val = Math.ceil(2.4); 
-val = Math.floor(2.4); 
-val = Math.sqrt(64); 
-val = Math.abs(-2); 
-val = Math.pow(4,2); 
-val = Math.min(4,2,-1,5,7,22,1,-9); 
-val = Math.max(4,2,-1,5,7,22,1,-9); 
-val = Math.random(); 
-val = Math.random() * 20 + 1; // 1-20 Decimal
+// Concatenation
+val = firstName + ' ' + lastName;
+// Append
+val = 'Shovon ';
+val += 'Das';
+val = 'Hello, My name is '+firstName+' and I am '+age;
 
-val = Math.floor(Math.random() * 20 + 1); 
+// Escaping
+val = "That's Awesome, I Can't wait";
+val = 'That\'s Awesome, I Can\'t wait';
 
+// Length
+val = firstName.length;
+
+// concat()
+val = firstName.concat(' ',lastName);
+
+//Change Case
+val =firstName.toUpperCase();
+val =firstName.toLowerCase();
+
+//String Like Array
+val = firstName[0]; // w
+val = firstName[1]; // i
+
+// IndexOf()
+val = firstName.indexOf('l');
+val = firstName.lastIndexOf('l');
+
+// charAt()
+val = firstName.charAt('2');
+
+// Get Last char
+val = firstName.charAt(firstName.length -1);
+
+// SubString()
+val = firstName.substring(0,4); // string from 0 to 4
+
+// Slice() // mostly used in arrays
+val = firstName.slice(0,4); // Similier substring()
+val = firstName.slice(-3);
+
+//split()
+val = str.split(' ');
+val = tags.split(',');
+
+//Replace
+val = str.replace('Shovon', 'Brad')
+
+// Includes()
+val = str.includes('Shovon'); // true
+val = str.includes('shovon'); // false
 
 console.log(val);
+
+
+
+
