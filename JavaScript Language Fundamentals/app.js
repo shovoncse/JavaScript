@@ -105,3 +105,47 @@ var firstname = 'abc'; //(Not Recommanded)
 /* ======================
         DATATYPES
 =========================*/
+//Dynamic type language
+
+//PRIMITIVE
+
+//String
+const name = 'Jhon Doe';
+console.log(typeof name);
+
+//Number
+const age = 12;
+console.log(typeof age);
+
+//Boolean
+const hasKid = true;
+console.log(typeof hasKid);
+
+//Null
+const car = null;
+console.log(typeof car); // Bug
+
+//undefined
+let test;
+console.log(typeof test); 
+
+//Symbol
+const sym = Symbol();
+console.log(typeof sym);
+
+// REFERENCE TYPES - Objects
+
+// Array
+const hobbis = ['movies', 'music'];
+console.log(typeof hobbis);
+
+//Object Literal
+const address = {
+    city: 'Khulna',
+    state: 'South'
+}
+console.log(typeof address);
+
+const today = new Date();
+console.log(today);
+console.log(typeof today);
