@@ -236,11 +236,12 @@ console.log(typeof today);
 // val = Math.random(); 
 // val = Math.random() * 20 + 1; // 1-20 Decimal
 
-// val = Math.floor(Math.random() * 20 + 1); 
 
+// val = Math.floor(Math.random() * 20 + 1); 
 
 // console.log(val);
 
+/*
 const firstName = 'William';
 const lastName = 'Johnson';
 const age = 36;
@@ -248,8 +249,8 @@ const str = 'Hello there my name is Shovon Das';
 const tags = 'web design,web development, graphics, programming' ;
 let val;
 
-val = firstName + lastName;
 
+val = firstName + lastName;
 // Concatenation
 val = firstName + ' ' + lastName;
 // Append
@@ -305,6 +306,43 @@ val = str.includes('shovon'); // false
 
 console.log(val);
 
+*/
 
+
+const name = 'Jhon';
+const age = 30;
+const job = 'Web Developer';
+const city = 'Miami';
+let html;
+
+//Without Template String
+html = '<ul><li>Name: '+name+'</li><li>age: '+age+'</li><li>Job: '+job+'</li><li>City: '+city+'</li></ul>';
+html = '<ul>'+
+            '<li>Name: '+name+'</li>'+
+            '<li>age: '+age+'</li>'+
+            '<li>Job: '+job+'</li>'+
+            '<li>City: '+city+'</li>'+
+        '</ul>';
+
+
+function hello(){
+    return 'Hello';
+}
+//With template String (es6)
+html = `
+    <ul>
+        <li>Name: ${name}</li>
+        <li>Age: ${age}</li>
+        <li>Job: ${job}</li>
+        <li>City: ${city}</li>
+        <li>${4+6}</li>
+        <li>${Math.PI}</li>
+        <li>${hello()}</li>
+        <li>${age > 30 ? 'Over 30': 'Under 30'}</li>
+    </ul>
+
+`;
+
+document.write(html);
 
 
