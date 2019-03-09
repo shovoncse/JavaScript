@@ -486,7 +486,7 @@ console.log(val);
  CONDITIONAL STATEMENT 
 ===================== */
 
-const id = 100;
+//const id = 100;
 // EQUAL TO
 // if(id == 100){
 //     console.log('CORRECT');
@@ -762,15 +762,116 @@ const id = 100;
 
 // FOR IN LOOP
 
-const users = {
-    firstName : 'Jhon',
-    lastName : 'Doe',
-    age : 40 
- }
-// console.log(users.firstName);
+// const users = {
+//     firstName : 'Jhon',
+//     lastName : 'Doe',
+//     age : 40 
+//  }
+// // console.log(users.firstName);
 
-for(let i in users){
+// for(let i in users){
     
-    console.log(`${i} : ${users[i]}`);
+//     console.log(`${i} : ${users[i]}`);
     
-}
+// }
+
+/*=======================================
+    WINDOW METHOD / OBJECT / PROPERTIES
+=========================================*/
+
+// ALERT
+// window.alert();
+// alert();
+
+// PROMPT
+// const input = prompt();
+// alert(input);
+
+// CONFIRM
+// const a = confirm('Are you sure ?');
+// //alert(a);
+// if(a){
+//     console.log('Ok Pressed');
+// }else{
+//     console.log('Cancel Pressed');
+// }
+
+// AWESOMENESS
+
+
+// let val;
+
+// // Outer Height and Width
+// val = window.outerHeight;
+// val = window.outerWidth;
+
+// // inner Height and Width
+// val = window.innerHeight;
+// val = window.innerWidth;
+
+// // Scroll Point
+// val = window.scrollY; // up-down
+// val = window.scrollX; // left-right
+
+// // Location object
+// val = window.location;
+// val = window.location.hostname;
+// val = window.location.port;
+// val = window.location.href;
+// val = window.location.search; 
+
+// Redrict
+//window.location.href = 'http://google.com';
+// Reload
+// window.location.reload();
+
+
+// History Object
+//  window.history.go(-2);
+// val = window.history.length;
+
+// Navigator Object
+// val = window.navigator;
+// val = val.appName;
+// val = window.navigator.appVersion;
+// val = window.navigator.userAgent;
+// val = window.navigator.platform;
+// val = window.navigator.vendor;
+// val = window.navigator.language;
+
+
+// console.log(val);
+
+// GLOBAL SCOPE
+
+// var a =1;
+// let b = 2;
+// const c = 3;
+
+// IFFIs
+// (function(){
+//     var a =4;
+//     let b = 5;
+//     const c = 6;
+//     console.log('Function Scope: ',a,b,c);
+    
+// })();
+
+// if(true){
+//     // Block Scope
+//     var a =4;
+//     let b = 5;
+//     const c = 6;
+//     console.log('If Scope', a, b, c);    
+// }
+
+// for(let a =0; a < 10; a++){
+//     console.log(`Loop: ${a}`);
+    
+// }
+
+// console.log('Global Scope: ',a,b,c);
+
+
+
+/********* SHOVON DAS **********/
