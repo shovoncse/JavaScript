@@ -345,3 +345,133 @@
 //  }
 
  // CLASS 9 END
+
+ //const form = document.querySelector('form');
+ //const taskInput = document.getElementById('task');
+ //const heading = document.querySelector('h5');
+
+//  Clear Input
+//taskInput.value = '';
+
+//form.addEventListener('submit', runEvent);
+// Key Down
+// taskInput.addEventListener('keydown', runEvent);
+// Key Up
+// taskInput.addEventListener('keyup', runEvent);
+// Key press
+// taskInput.addEventListener('keypress', runEvent);
+// Foucas
+//taskInput.addEventListener('focus', runEvent);
+// Blur
+//taskInput.addEventListener('blur', runEvent);
+// Cut
+//taskInput.addEventListener('cut', runEvent);
+// paste
+//taskInput.addEventListener('paste', runEvent);
+// paste
+//taskInput.addEventListener('input', runEvent);
+// change (select)
+//taskInput.addEventListener('change', runEvent);
+
+//function runEvent(e){
+    //  e.preventDefault();
+    // //  Get input value 
+    // console.log(taskInput.value);
+    
+    //console.log(`Event Type: ${e.type}`);
+    // console.log(e.target.value);
+    //heading.innerText = e.target.value;
+//}
+
+
+// CLASS 10 ENDS
+
+// EVENT BUBBLING
+// EVENT DELEGATION (Opposite of Bubbling)
+
+// SEE HOW EVENT BUBBLING WORKS
+
+// document.querySelector('.card-title').addEventListener('click', function(){
+//     console.log('card title');
+// });
+// document.querySelector('.card-content').addEventListener('click', function(){
+//     console.log('card content');
+// });
+// document.querySelector('.card').addEventListener('click', function(){
+//     console.log('card title');
+// });
+// document.querySelector('.col').addEventListener('click', function(){
+//     console.log('col');
+// });
+ 
+// SEE HOW EVENT DELEGATION WORKS //e.target
+
+//const delItem = document.querySelector('.delete-item');
+
+//delItem.addEventListener('click', deleteItem);
+
+//document.body.addEventListener('click', deleteItem);
+
+//function deleteItem(e){ 
+    //console.log('Delete Item');
+
+    // if(e.target.parentElement.className === 'delete-item secondary-content'){
+    // if(e.target.parentElement.classList[0] === 'delete-item'){
+    //if(e.target.parentElement.classList.contains('delete-item')){
+        //console.log('delete item');
+        //e.target.parentElement.parentElement.remove();
+    //}
+
+    // console.log(e.target.parent);
+//}
+
+// Class 11 Ends
+
+// Set Local Storage item (Stays after browser close)
+// localStorage.setItem('name', 'jhon');
+// localStorage.setItem('age', '27');
+// localStorage.setItem('email', 'admin@gamil.com');
+
+// Set Session Storage item (Gone after browser close)
+// sessionStorage.setItem('name', 'Beth');
+
+// Remove from Storage
+// localStorage.removeItem('name');
+
+// Get From Storage
+// const name = localStorage.getItem('name');
+// const age = localStorage.getItem('age');
+
+// console.log(name,age);
+
+//localStorage.clear();
+
+document.querySelector('form').addEventListener('submit', function(e){
+
+    e.preventDefault();
+
+    const task = document.querySelector('#task').value;
+    
+    // console.log(task);
+    let tasks;
+
+    if(localStorage.getItem('tasks') === null){
+        tasks = [];
+    }else{
+        tasks = JSON.parse(localStorage.getItem('tasks'));
+    }
+    
+    
+
+    tasks.push(task);
+
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+
+    alert('Task Saved');
+
+});
+
+
+const tasks = JSON.parse(localStorage.getItem('tasks'));
+// console.log(tasks);
+tasks.forEach(task =>  console.log(task));
