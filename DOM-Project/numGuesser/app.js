@@ -69,7 +69,7 @@ guessBtn.addEventListener('click', function(){
                 let guessOrguesses = '';
 
                 guessesLeft === 1 ? guessOrguesses = 'guess' : guessOrguesses = 'guesses' ;
-                
+
                 // Tell User its the wrong number
                 setMessage(`${guess} is not correct, ${guessesLeft} ${guessOrguesses} Left `, 'red');
 
@@ -98,6 +98,7 @@ function gameOver(won, msg){
     guessBtn.value = 'Play Again';
     guessBtn.className += 'play-again';
 }
+
 // Get Random winning number
 function getRandWinNum(min, max){
     return Math.floor(Math.random() * ( max - min + 1 ));
