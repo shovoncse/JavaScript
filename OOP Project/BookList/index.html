@@ -10,18 +10,36 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Book List</title>
     <style>
-        .success,
-        .error {
-            color: #fff;
-            padding: 5px;
-            margin: 5px 0 15px 0;
+        .alert {
+            width: 100%;
+            border: 1px solid;
+            padding: 10px;
+            margin: 20px 0;
+            color: grey;
         }
 
-        .success {
-            background: green;
+        .alert-danger {
+            border-color: #d32f2f;
+            background-color: #ef5350;
+            color: white;
         }
-        .error {
-            background: #f00;
+
+        .alert-warning {
+            border-color: #ef6c00;
+            background-color: #ff9800;
+            color: white;
+        }
+
+        .alert-info {
+            border-color: #0288d1;
+            background-color: #29b6f6;
+            color: white;
+        }
+        
+        .alert-success {
+            border-color: #24cc0d;
+            background-color: #24cc0d;
+            color: white;
         }
     </style>
 </head>
@@ -32,8 +50,8 @@
             <div class="col s12">
                 <div id="main" class="card">
                     <div class="card-content">
-                        <!-- <span class="card-title">Task List</span> -->
                         <span class="card-title">Add book</span>
+                        <hr>
                         <div class="row">
                             <form id="book-form">
                                 <div class="input-field col s12">
@@ -55,19 +73,19 @@
                     <div class="card-action">
                         <h5 id="task-title">Book List</h5>
                         <hr>
-                            <table class="striped">
-                                <thead>
-                                  <tr>
-                                      <th>Title</th>
-                                      <th>Author</th>
-                                      <th>ISBN</th>
-                                      <th></th>
-                                  </tr>
-                                </thead>
-                        
-                                <tbody id="book-list">
-                                </tbody>
-                              </table>
+                        <table class="striped">
+                            <thead>
+                                <tr>
+                                    <th>Title</th>
+                                    <th>Author</th>
+                                    <th>ISBN</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+
+                            <tbody id="book-list">
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
@@ -78,7 +96,8 @@
         crossorigin="anonymous"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="app.js"></script>
+    <!-- <script src="app.js"></script> -->
+    <script src="app-es6.js"></script>
 </body>
 
 </html>
