@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "name": "Olivia Karsen",
+        "company": "O & J Freiters",
+        "phone": "444-555-6666"
+    },
+    {
+        "id": 2,
+        "name": "Jabe Stuarts",
+        "company": "O & J Freiters",
+        "phone": "444-555-6666"
+    },
+    {
+        "id": 3,
+        "name": "Tex Bale",
+        "company": "Karsens Fraiter",
+        "phone": "444-6666-1111"
+    },
+    {
+        "id": 4,
+        "name": "Shanon Morgan",
+        "company": "Morgan's Firm",
+        "phone": "444-555-2222"
+    }
+
+]
