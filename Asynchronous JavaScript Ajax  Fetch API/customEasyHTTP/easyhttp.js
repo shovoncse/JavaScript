@@ -25,6 +25,7 @@ easyHTTP.prototype.get = function(url,callBack){
     };
     this.http.send();
 }
+
 // Make an HTTP POST Request
 easyHTTP.prototype.post = function(url, data, callBack){
     this.http.open('POST', url, true);
@@ -38,6 +39,7 @@ easyHTTP.prototype.post = function(url, data, callBack){
     };
     this.http.send(JSON.stringify(data));
 }
+
 // Make an HTTP PUT Request
 easyHTTP.prototype.put = function(url, data, callBack){
     this.http.open('PUT', url, true);
@@ -51,6 +53,7 @@ easyHTTP.prototype.put = function(url, data, callBack){
     };
     this.http.send(JSON.stringify(data));
 }
+
 // Make an HTTP DELETE Request
 easyHTTP.prototype.delete = function(url,callBack){
     this.http.open('DELETE', url, true);
@@ -66,4 +69,3 @@ easyHTTP.prototype.delete = function(url,callBack){
     };
     this.http.send();
 }
-// M
